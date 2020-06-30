@@ -24,7 +24,7 @@ summary(locs)
 locs$date <- as.POSIXct(locs$date, tz = 'UTC') # format date
 locs$animal <- as.factor(locs$animal) # make animal/tag a factor
 
-## Take each tag through one at a time; easier to check for inconsistences ##
+## Take each tag through one at a time; easier to check for inconsistencies ##
 # subset out 1 tag 
 sub <- filter(locs, animal == 'SaTag001')
 
