@@ -67,6 +67,12 @@ write.csv(pred, "SaTag001-009_FG4hSSM_CRW_2020Jun19.csv", row.names = F)
 ## This model generates a parameter, gamma, that serves as an index for animal behavior.
 ## We use the joint-move-persistence-model (jmpm) model option because we are fitting over multiple 
 ## tags. This option uses a pooled random variance parameter. 
+
+## For this project, our limited sample size and tag duration make it difficult to detect fine scale
+## changes in move persistence within individual tracks. In the first fit, gamma ranged from 0.01-.7.
+## Move persistence values greater than 0.75 are deemed as 'high move persistence' or directed travel,
+## where as lower values (e.g., 0.40) are low move peristence. Only one tag (SaTag003) had a decently
+## distributed range of gamma values.
 # fit 
 fmp <- mm %>%
   grab(., "p", as_sf = F) %>%
