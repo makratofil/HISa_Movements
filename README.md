@@ -6,3 +6,6 @@ Script that calculates horizontal travel speed between consecutive points for ea
 
 ## foieGras_SaTags.R
 Script that formats Douglas-filtered location data and fits a continuous-time correlated random walk model, regularized to 4 hour time intervals, using the *foieGras* package (Jonsen & Patterson, 2020). Model specifications included in the code comments. Script includes code to fit move-persistence model using CRW-predicted locations. 
+
+## SpeedToDMaps_SaTags.R
+Script that generates maps of locations and tracklines for each spotted dolphin tag (not SaTag009), and fills in locations/points corresponding to travel speed or time of day. 
